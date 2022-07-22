@@ -27,7 +27,12 @@ for (let column = 0; column < yColumn; column++){
 }
 fullTable.appendChild(div)
 
-
+let color = document.querySelectorAll("td");
+color.forEach(function (color) {
+    color.addEventListener("click", function () {
+        this.style.backgroundColor = document.querySelector("#colorPicker").value;
+    }); 
+});
 
 }
 
