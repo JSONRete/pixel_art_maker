@@ -17,6 +17,7 @@ function makeGrid() {
 fullTable.innerHTML = "";
 let div = document.createElement("div")
 
+// nested loop iterates to create grid table
 for (let column = 0; column < yColumn; column++){
     let tr = document.createElement("tr")
     for (let row = 0; row < xRow; row++) {
