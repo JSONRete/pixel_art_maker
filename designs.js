@@ -13,9 +13,9 @@ function makeGrid() {
     const xRow = document.getElementById("inputWidth").value;
     const yColumn = document.getElementById("inputHeight").value;
 
-
 fullTable.innerHTML = "";
 let div = document.createElement("div")
+
 for (let column = 0; column < yColumn; column++){
     let tr = document.createElement("tr")
     for (let row = 0; row < xRow; row++) {
