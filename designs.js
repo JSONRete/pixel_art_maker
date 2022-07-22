@@ -8,6 +8,7 @@ pickSize.addEventListener("submit", function (event) {
     makeGrid();
 });
 
+// this function adds grid table to dom from the size submitted parameters  
 function makeGrid() {
     const fullTable = document.getElementById("pixelCanvas");
     const xRow = document.getElementById("inputWidth").value;
@@ -27,6 +28,8 @@ for (let column = 0; column < yColumn; column++){
 }
 fullTable.appendChild(div)
 
+
+// change individual cell color when pointer cursor clicks it
 let colors = document.querySelectorAll("td");
 colors.forEach(function (colorChange) {
     colorChange.addEventListener("click", function () {
